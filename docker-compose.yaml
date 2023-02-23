@@ -1,0 +1,40 @@
+version: "3.9"
+
+services:
+  nginx:
+    container_name: test_nginx
+    build:
+      context: ./docker/nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./application:/var/www/html/application
+    restart: unless-stopped
+    depends_on:
+      - php
+
+  php:
+    container_name: test_php
+    build:
+      context: ./docker/php
+      args:
+        - USERNAME=carlos
+        - UID=1000 #User id to synchronize with local user
+        - GIT_EMAIL=carlinhus@carlinhus.com
+        - GIT_NAME=Carlos Campo
+    volumes:
+      - ./application:/var/www/html/application
+    restart: unless-stopped
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:15.2-alpine
+    container_name: test_db
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: test_db
+      POSTGRES_USER: postgres_test_user
+      POSTGRES_PASSWORD: testing
