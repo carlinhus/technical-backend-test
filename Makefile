@@ -8,6 +8,9 @@ db_name=test_db
 
 #Executables
 
+init-composer:
+	@docker exec -ti $(project_name_id)php composer install
+	@docker exec -ti $(project_name_id)php php bin/console doctrine:migration:migrate --no-interaction
 up:
 	@$(shell docker-compose up -d)
 stop:

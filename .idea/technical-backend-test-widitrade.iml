@@ -68,6 +68,20 @@
       <excludeFolder url="file://$MODULE_DIR$/application/vendor/symfony/maker-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/application/vendor/symfony/validator" />
       <excludeFolder url="file://$MODULE_DIR$/application/vendor/symfony/translation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/application/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/application/vendor/symfony/serializer" />
+      <excludeFolder url="file://$MODULE_DIR$/application/vendor/symfony/property-access" />
+      <excludeFolder url="file://$MODULE_DIR$/application/vendor/phpdocumentor/type-resolver" />
+      <excludeFolder url="file://$MODULE_DIR$/application/vendor/symfony/property-info" />
+      <excludeFolder url="file://$MODULE_DIR$/application/vendor/phpdocumentor/reflection-common" />
+      <excludeFolder url="file://$MODULE_DIR$/application/vendor/phpdocumentor/reflection-docblock" />
+      <excludeFolder url="file://$MODULE_DIR$/application/vendor/ralouphie/getallheaders" />
+      <excludeFolder url="file://$MODULE_DIR$/application/vendor/psr/http-client" />
+      <excludeFolder url="file://$MODULE_DIR$/application/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/application/vendor/psr/http-factory" />
+      <excludeFolder url="file://$MODULE_DIR$/application/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/application/vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/application/vendor/guzzlehttp/psr7" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
