@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace App\Entity;
 
@@ -13,11 +14,11 @@ class ShortedUrl
     #[ORM\Column]
     private ?int $id = null;
 
-    #[ORM\Column(length: 255, nullable: true)]
+    #[ORM\Column(length: 255, unique: true, nullable: true)]
     private ?string $destiny = null;
 
-    #[ORM\Column(length: 255)]
-    private ?string $localUrl = null;
+    #[ORM\Column(length: 255, unique: true)]
+    private ?string $originUrl = null;
 
     public function getId(): ?int
     {
@@ -36,14 +37,14 @@ class ShortedUrl
         return $this;
     }
 
-    public function getLocalUrl(): ?string
+    public function originUrl(): ?string
     {
-        return $this->localUrl;
+        return $this->originUrl;
     }
 
-    public function setLocalUrl(string $localUrl): self
+    public function setOriginUrl(string $localUrl): self
     {
-        $this->localUrl = $localUrl;
+        $this->originUrl = $localUrl;
 
         return $this;
     }
