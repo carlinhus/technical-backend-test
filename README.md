@@ -27,7 +27,10 @@ Navigate to a shorted url:
 ```
 GET http://localhost/<shortUrl>
 ```
-
-
+## Tests
+You can execute the programmed tests using this command at the root of the project:
+```sh
+make test
+```
 
 <small>Made by Carlos Campo Liébana with love</small>

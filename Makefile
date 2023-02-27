@@ -21,4 +21,5 @@ db:
 	@docker exec -ti $(project_name_id)db psql postgresql://$(db_username):$(db_password)@localhost/$(db_name)
 php:
 	@docker exec -ti $(project_name_id)php /bin/bash
-
+test:
+	@docker exec -ti $(project_name_id)php php bin/phpunit
