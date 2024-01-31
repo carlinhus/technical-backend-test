@@ -1,4 +1,4 @@
-# Technical test backend Widitrade
+# Technical test backend
 Widitrade request test implementation
 
 ## Get started
