@@ -1,5 +1,5 @@
 #!/bin/zsh
-session="Widitrade"
+session="Test Project"
 #Session start detched
 tmux new-session -d -s $session
 #Rename first window
